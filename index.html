@@ -4,36 +4,42 @@
     
 
         <body>
+            
             <div class="background">
-            <h1>Most Memorable Bible Quotes</h1>
-                
-                <button onclick="toggleForm()" id="newQuote">Add a Quote</button>
-                <div class="form-popup" id="myForm">
+                <h1>Most Memorable Bible Quotes</h1>
                     
-                    <form onsubmit="return false" id="formContainer" class="form-container">
-                    <h2>Add Bible Quote</h1>
+                <div class="form-container">
+                    <button onclick="toggleForm()" id="newQuote">Add a Quote</button>
                     
-                    <div id="quote">
-                        <label for="quote"><b>Quote</b></label>
-                        <input type="text" id="quote" placeholder="Enter Quote" name="title" required>
-                    </div>
-                    <div id="Author">
-                        <label for"author"><b>Author</b></label>
-                        <input type="text" id="author" placeholder="Enter Author" required>
-                    </div>
-                    <div id="chapter">
-                        <label for"chapter"><b>Chapter</b></label>
-                        <input type="number" id="pages" placeholder="Enter Chapter" required>
-                    </div>
-                    <div id="verses">
-                        <label for"chapter"><b>Verses</b></label>
-                        <input type="number" id="verses" placeholder="Enter verse numbers" required>
-                    </div>
+                    <div class="form-popup" id="myForm">
+                        
+                        <form onsubmit="return false" id="formContainer" class="form-container">
+                        <h2>Add Bible Quote</h1>
+                        
+                        <div id="add-quote">
+                            <label for="quote"><b>Quote</b></label>
+                            <input type="text" id="quote" placeholder="Enter Quote" required>
+                        </div>
+                        <div id="add-author">
+                            <label for="author"><b>Author</b></label>
+                            <input type="text" id="author" placeholder="Enter Author" required>
+                        </div>
+                        <div id="add-chapter">
+                            <label for="chapter"><b>Chapter</b></label>
+                            <input type="number" id="chapter" placeholder="Enter Chapter (Ex: 15)" required>
+                        </div>
+                        <div id="add-verses">
+                            <label for="verses"><b>Verses</b></label>
+                            <input type="text" id="verses" placeholder="Enter verse numbers (Ex: 0-9)" required>
+                        </div>
 
-                    <button id="addBook">Add Quote!</button>
-                    </form>
+                        
+                        </form>
+                        <button id="addQuote">Add Quote!</button>
+                    </div>
                 </div>
             </div>
+            <div id="library"><ul id="list"></ul>
         </body>
    
     <script src="script.js"></script>

@@ -1,22 +1,33 @@
 h1{
     color: white;
     text-align: center;
-}
-body{
-
+    border: 5px solid white;
 }
 
 .form-popup{
     display: none;
 }
+
 h2{
     color: white;
+    text-align: center;
+    border: 2px solid white;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-#newQuote{
-    margin-bottom: 25%;
+
+.form-container{
+    height: 400px;
+    width: 225px;
     float: right;
-    position: relative;
-    width: 200px;
+    bottom: 0;
+}
+
+.form-container #newQuote{
+    margin-bottom: 2%;
+    margin-right: 10%;
+    float: right;
+    width: 210px;
     height: 50px;
     font-size: 20px;
     justify-content: center;
@@ -25,12 +36,33 @@ h2{
     background-color: lightgreen;
     color: white;
 }
+
 #myForm{
-    position: relative;
+    margin-right: 10%;
     border: 5px solid white;
-    border-radius: 5%;
+    border-radius: 5px;
     float: right;
+    text-align: center;
 }
+
+#addQuote{
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    border-radius: 7px;
+    background-color: lightgreen;
+    color: white;
+}
+
+input{
+    height: 50px;
+    width: 200px;
+}
+
+
 label{
     color: white;
 }
@@ -47,4 +79,21 @@ label{
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 75%;
+}
+
+#library{  
+    list-style-type:none;
+    font-display: none;
+    float: left;
+    margin-top: 5%;
+    color: black;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 10px;
+    
+}
+
+li{
+    font-size: 40px;
+    min-height: 40px;
 }
