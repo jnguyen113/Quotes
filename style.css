@@ -86,7 +86,6 @@ label{
     list-style-type:none;
     font-display: none;
     float: left;
-    margin-top: 5%;
     color: black;
     text-align: center;
 }
@@ -111,4 +110,8 @@ label{
     text-align: center;
     color: white;
     justify-content: center;
+}
+
+ul{
+    list-style-type: none;
 }
