@@ -17,14 +17,14 @@ h2{
 }
 
 .form-container{
-    height: 400px;
+    height: 375px;
     width: 225px;
     float: right;
     bottom: 0;
 }
 
 .form-container #newQuote{
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     margin-right: 10%;
     float: right;
     width: 210px;
@@ -60,6 +60,7 @@ h2{
 input{
     height: 50px;
     width: 200px;
+    border-radius: 5px;
 }
 
 
@@ -78,7 +79,7 @@ label{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    opacity: 75%;
+    opacity: 80%;
 }
 
 #library{  
@@ -88,12 +89,26 @@ label{
     margin-top: 5%;
     color: black;
     text-align: center;
-    border: 5px solid white;
-    border-radius: 10px;
-    
 }
 
-li{
-    font-size: 40px;
-    min-height: 40px;
+#library{
+    font-size: 25px;
+    display: inline-block;
+    border: 5px solid white;
+    padding: 20px;
+    color: white;
+    background-color: rgba(46, 228, 121, 0.582);
+    border-radius: 5px;
+}
+
+.remove{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 104, 104);
+    float: right;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    justify-content: center;
 }
