@@ -92,12 +92,11 @@ label{
 
 #library{
     font-size: 25px;
-    display: inline-block;
-    border: 5px solid white;
     padding: 20px;
     color: white;
-    background-color: rgba(46, 228, 121, 0.582);
-    border-radius: 5px;
+    background-color: transparent;
+    max-height: 700px;
+    max-width: 1500px;
 }
 
 .remove{
@@ -110,8 +109,23 @@ label{
     text-align: center;
     color: white;
     justify-content: center;
+    top: 0;
+    right: 0;
 }
 
-ul{
-    list-style-type: none;
+#library{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#library div{
+    margin-left: 1%;
+    display: block;
+    border: 5px solid white;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    width: 400px;
+    height: 150px;
 }

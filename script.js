@@ -19,7 +19,7 @@ function add() {
   var verses = document.getElementById("verses").value;
 
   var quotes = getQuotes();
-  quotes.push(`"${bquotes}"\n -${author} ${chapter}:${verses}`);
+  quotes.push(`"${bquotes}" \n -${author} ${chapter}:${verses}`);
   console.log(quotes);
   localStorage.setItem('quote', JSON.stringify(quotes));
   show();
@@ -69,23 +69,20 @@ function toggleForm() {
 function show() {
   var quotes = getQuotes();
   //start with a list
-  var html = '<div>';
+  var html = '<li>';
   //creating list per length and remove button
   for (var i = 0; i < quotes.length; i++) {
-    html += '<div>' + quotes[i] + '<button class="remove" id="' + i + '">x</button></div>';
-
+    html += '<div>' + quotes[i] + '<button class="remove" id="' + i + '">x</button></div>';//this only has quotes and remove
+    console.log(quotes[i]);
+    html += '</li>'; //end with div
   };
-  html += '</div>'; //end with div
-
-  // var newDiv = document.createElement('div');
-  // newDiv.innerHTML = html;
+  
   document.getElementById('library').innerHTML = html;
 
   var buttons = document.getElementsByClassName('remove');
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', remove);
   };
-
 
 }
 
