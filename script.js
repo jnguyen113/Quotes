@@ -72,9 +72,10 @@ function show() {
   var html = "";
   //creating list per length and remove button
   for (var i = 0; i < quotes.length; i++) {
-    html += '<div id="contain">' + quotes[i] + '<button class="remove" id="' + i + '">x</button></div>';//this only has quotes and remove
+    html += '<div id="contain" class="animated fadeIn">' + quotes[i] + '<button class="remove" id="' + i + '">x</button></div>';//this only has quotes and remove
     console.log(quotes[i]);
     //html += '</div>'; //end with div
+   
   };
   if(quotes.length > 12){
     alert("Bible Quotes has reached capacity, please delete a previous one to continue");
