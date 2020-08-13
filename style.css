@@ -99,34 +99,16 @@ label{
     max-width: 1500px;
 }
 
-@keyframes fadeIn{
-    0% {opacity: 0;}
-    100% {opacity:.80;}
-}
+
+
 .animated{
     position: relative;
     background-color: rgb(42, 148, 219);
     opacity: 75%;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+   
 }
 
-@-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 80;}
- }
 
- @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: .80;}
- }
- 
- .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
- }
 
 
 #contain .remove{
@@ -155,4 +137,33 @@ label{
     border-radius: 5px;
     width: 400px;
     height: 150px;
+}
+
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }
+
+
+.fade li{
+    transition: all 0.4s ease-out;
+    opacity: 0;
+    
+}
+.fade li.show{
+    opacity: 1;
+}
+
+.open{
+    animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }

@@ -86,7 +86,7 @@ function show() {
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', remove);
   };
-
+  
 }
 
 document.getElementById('addQuote').addEventListener('click', add);
